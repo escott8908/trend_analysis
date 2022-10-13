@@ -19,7 +19,7 @@ def get_ticker_data(tickers = None, period = None):
 
     tickers = [t.strip() for t in tickers.split(',')]
     tickers_df = yf.download(tickers=tickers, period=period)
-    tickers_df = tickers_df.stack().reset_index().rename(columns={'level_1':'ticker'})
+    tickers_df = tickers_df.stack().reset_index().rename(columns={'level_1':'Ticker'})
 
     return tickers_df
 
