@@ -9,8 +9,8 @@ ticker_input = st.text_input("Enter Tickers (i.e.: GS, MSFT, AAPL)", 'GS, MSFT, 
 
 period = st.text_input("Enter Period (valid periods: 1d,5d,1mo,3mo,6mo,1y,2y,5y,10y,ytd,max)", '1d')
 
-st.write(f"ticker inputs: {ticker_input}!")
-st.write(f"period to extract: {period}")
+# st.write(f"ticker inputs: {ticker_input}")
+# st.write(f"period to extract: {period}")
 
 @st.cache
 def get_ticker_data(tickers = None, period = None):
